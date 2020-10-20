@@ -4,5 +4,6 @@
 - It will be filtered by kata levels.
 - Look at the different js files to see the code resolution.  
 - I will also put the link to do it yourself.
+- It is in chronological order.
 
 ## Some tests on paper:
