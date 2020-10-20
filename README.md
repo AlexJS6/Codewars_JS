@@ -2,5 +2,7 @@
 
 - This repository is to look back and show my codewars resolutions.  
 - It will be filtered by kata levels.
+- Look at the different js files to see the code resolution.  
+- I will also put the link to do it yourself.
 
 ## Some tests on paper:
