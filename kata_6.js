@@ -172,3 +172,11 @@ function stringTransformer(str) {
     }
     return my_arr.join(' ');
 }
+
+
+https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript
+function inArray(array1,array2){
+    return array1.filter(ending => {
+      return array2.some(word => word.includes(ending));
+    }).sort();
+}
