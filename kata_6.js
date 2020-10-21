@@ -191,4 +191,17 @@ function createPhoneNumber(numbers){
 }
 
 
-
+https://www.codewars.com/kata/5264d2b162488dc400000001
+function spinWords(str){
+    my_arr = str.split(' ');
+    for (let i=0; i<my_arr.length; i++) {
+        if (my_arr[i].length >= 5) {
+            let new_arr = [];
+            for (let j=0; j<my_arr[i].length; j++) {
+                new_arr.unshift(my_arr[i][j]);
+            }
+            my_arr.splice(i, 1, new_arr.join(''));
+        }
+    }
+    return my_arr.join(' ');
+}
