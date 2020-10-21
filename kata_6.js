@@ -205,3 +205,23 @@ function spinWords(str){
     }
     return my_arr.join(' ');
 }
+
+
+https://www.codewars.com/kata/5526fc09a1bbd946250002dc/solutions/javascript
+function findOutlier(integers){
+    //check first 3
+    let odd = [], even = [];
+    for (let i=0; i<integers.length; i++) {
+        if (integers[i] % 2 == 0) {
+            even.push(integers[i]);
+        }
+        else {
+            odd.push(integers[i]);
+        }
+    }
+    if (even.length > odd.length) {
+        return odd;
+    } else {
+        return even;
+    }
+}
