@@ -233,3 +233,17 @@ const isPrime = num => {
         if(num % i === 0) return false; 
     return num > 1;
 }
+
+
+https://www.codewars.com/kata/5287e858c6b5a9678200083c
+function narcissistic(value) {
+    let value_arr = value.toString().split(''), result = 0;
+    let my_length = value_arr.length;
+    for (let i=0; i<value_arr.length; i++) {
+        let int = parseInt(value_arr[i]);
+        result += Math.pow(int, my_length);
+    }
+    if (result === value) { return true }
+    else { return false}
+
+}
