@@ -180,3 +180,15 @@ function inArray(array1,array2){
       return array2.some(word => word.includes(ending));
     }).sort();
 }
+
+
+https://www.codewars.com/kata/525f50e3b73515a6db000b83/solutions/javascript
+function createPhoneNumber(numbers){
+    let result = '';
+    result += `(${numbers[0]}${numbers[1]}${numbers[2]})`;
+    result += ` ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`;
+    return result;
+}
+
+
+
