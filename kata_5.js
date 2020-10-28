@@ -64,6 +64,6 @@ function pigIt(str){
 // New optimised code:
 function pigIt(str) {
   return str.replace(/\w+/g, (w) => {
-    return w.splice(1) + w[0] + 'ay';
+    return w.slice(1) + w[0] + 'ay';
   })
 }
