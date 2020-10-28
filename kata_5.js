@@ -61,3 +61,9 @@ function pigIt(str){
   return result.join(' ');
 
 }
+// New optimised code:
+function pigIt(str) {
+  return str.replace(/\w+/g, (w) => {
+    return w.splice(1) + w[0] + 'ay';
+  })
+}
