@@ -38,3 +38,26 @@ var moveZeros = function(arr) {
     }
     return arr;
 }
+
+
+
+https://www.codewars.com/kata/520b9d2ad5c005041100000f
+function pigIt(str){
+  let my_arr = str.split(' '), result = [];
+  console.log(my_arr);
+  for (let i=0; i<my_arr.length; i++) {
+      if (my_arr[i] == '!' || my_arr[i] == '?'|| my_arr[i] == '.') {
+        result.push(my_arr[i]);
+        return result.join(' ');  
+      }
+      let new_char = my_arr[i][0];
+      let my_new_arr = my_arr[i].split('');
+      my_new_arr.shift();
+      my_new_arr.push(new_char);
+      my_new_arr.push('ay');
+      result.push(my_new_arr.join(''));
+      
+  }  
+  return result.join(' ');
+
+}
