@@ -67,3 +67,34 @@ function pigIt(str) {
     return w.slice(1) + w[0] + 'ay';
   })
 }
+
+
+
+//https://www.codewars.com/kata/52774a314c2333f0a7000688
+function validParentheses(parens){
+  let arr1 = [], arr2 = [];
+  for (let i=0; i<parens.length; i++) {
+      if (parens[i] == '(') {
+          arr1.push('(');
+      }
+      if (parens[i] == ')') {
+          if (arr1.length <= arr2.length) {
+              return false;
+          } else {
+              arr2.push(')');
+          }
+      }
+  }
+  if (arr1.length == arr2.length) {
+      return true;
+  } else {
+      return false;
+  }
+}
+
+// reviewed code
+function validParentheses(parens){
+  var re = /\(\)/;
+  while (re.test(parens)) parens = parens.replace(re, "");
+  return !parens;
+}
