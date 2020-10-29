@@ -4,3 +4,6 @@
 // LEARN forEach
 // LEARN every
 // LEARN from
+// Learn reduce
+// LEARN filter
+// LEAR Includes
