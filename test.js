@@ -2,3 +2,4 @@
 // LEARN MAp
 // LEARN Some
 // LEARN forEach
+// LEARN every
